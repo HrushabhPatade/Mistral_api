@@ -31,4 +31,5 @@ def generate_response():
     # Return the response as JSON
     return jsonify({"response": response_text})
 
-
+# if __name__ == '__main__':
+#     app.run(debug=True)
