@@ -14,7 +14,7 @@ prompt_template = PromptTemplate.from_template(template)
 repo_id = "mistralai/Mistral-7B-Instruct-v0.2"
 llm = HuggingFaceEndpoint(repo_id=repo_id, huggingfacehub_api_token=HUGGINGFACEHUB_API_TOKEN)
 
-# Define the route for POST requests
+# Define the route for POST requests and return to app
 @app.route('/generate-response', methods=['POST'])
 def generate_response():
     # Get the prompt from the POST request
